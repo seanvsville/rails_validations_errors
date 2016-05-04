@@ -13,6 +13,12 @@
   <title>RailsValidationsErrors</title>
 </head>
 <body>
+
+  <!-- display flash messages above the yield block -->
+  <% flash.each do |name, msg| %>
+    <div><%= msg %></div>
+  <% end %>
+
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
